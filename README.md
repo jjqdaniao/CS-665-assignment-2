@@ -1,30 +1,36 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Zhilin Chang               |
+| Date         | 2/23/2023                  |
+| Course       | Spring                     |
+| Assignment # | #2 Delivery System         |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+This is an assignment for students to write codes as backend members for a uber driver-alike perspective in a delivery system.
+In other words, we need to mimic a system when an unbusy delivery driver see a request for delivery, and send the request to
+him/her.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/jjqdaniao/cs-665-assignment-2
 
 # Implementation Description 
+For flexibility, new features could be implemented through Shop, abstract Driver, and Customer classes, since the
+DeliveryRequest class will have all those features through above interfaces.
 
+For avoiding duplicated code, I used abstract driver class to be extended through three different car types.
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+Basically a Delivery System contains 
+7 classes: 
+DeliveryRequest.java to implement all the interface including register and notify driver.
+Shop, abstract Driver, and Customer classes are those classes containing basic info.
+Van, Scooter, and taxi classes are those containing different prices and types by extending Driver class.
 
+And 4 interfaces:
+RegisterDriver, RegisterCustomer, and RegisterShoppingInfo are those for registering infos.
+Notify is for notifying unbusy driver for delivery. 
 
 # Maven Commands
 
